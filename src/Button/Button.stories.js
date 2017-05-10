@@ -1,15 +1,19 @@
 import React from 'react';
 import { storiesOf, action } from '@kadira/storybook';
+import Button from './Button';
+
 
 storiesOf('Button', module)
   .add('with text', () => (
-    <button onClick={action('clicked')}>
-      Hello Button
-    </button>
+    <Button
+      label={'Hello Button'}
+      onClick={action('clicked')}
+    />
   ))
   .add('with some emoji', () => (
-    <button onClick={action('clicked')}>
-      😀 😎 
-    </button> 
+    <Button
+      label={'😀 😎 👍'}
+      onClick={action('clicked')}
+    /> 
   ));
 
