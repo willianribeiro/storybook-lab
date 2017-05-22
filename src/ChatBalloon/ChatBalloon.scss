@@ -1,0 +1,99 @@
+// CHAT BALLOON
+.chat-balloon {
+    padding: $SPACING_3;
+    position: relative;
+    border-radius: $BORDER_RADIUS;
+    background-color: $COLOR_WHITE;
+    @include m-box-shadow(1);
+    font-size: 14px;
+
+    .chat-balloon__header {
+        display: flex;
+        align-items: center;
+        padding-bottom: $SPACING_3;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 1.5;
+    }
+
+    .chat-balloon__body {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    // CARET
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        border-width: 10px 15px;
+        border-style: solid;
+        border-color: transparent;
+    }
+
+    // CARET - BACKGROUND
+    &::before {
+        top: 32px;
+    }
+
+    // CARET - FOREGROUND
+    &::after {
+        top: 30px;
+    }
+
+
+    // STATES - CHAT BALLOON
+    &.is-caret-left {
+        &::before,
+        &::after {
+            left: -30px;
+        }
+
+        &::before {
+            border-right-color: rgba(0, 0, 0, .24);
+        }
+
+        &::after {
+            border-right-color:$COLOR_WHITE;
+        }
+    }
+
+    &.is-caret-left.is-dark {
+        background-color: $COLOR_GREY_LIGHTER;
+
+        &::before {
+            border-right-color: rgba(0, 0, 0, .24);
+        }
+
+        &::after {
+            border-right-color:$COLOR_GREY_LIGHTER;
+        }
+    }
+
+    &.is-caret-right {
+        &::before,
+        &::after {
+            right: -30px;
+        }
+
+        &::before {
+            border-left-color: rgba(0, 0, 0, .24);
+        }
+
+        &::after {
+            border-left-color:$COLOR_WHITE;
+        }
+    }
+
+    &.is-caret-right.is-dark {
+        background-color: $COLOR_GREY_LIGHTER;
+
+        &::before {
+            border-left-color: rgba(0, 0, 0, .24);
+        }
+
+        &::after {
+            border-left-color:$COLOR_GREY_LIGHTER;
+        }
+    }
+}
