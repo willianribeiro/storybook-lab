@@ -1,6 +1,6 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component, PropTypes } from 'react'
 
-import './ChatBalloon.css'
+import './ChatBalloon.scss'
 
 class ChatBalloonView extends Component {
     render() {
@@ -8,7 +8,7 @@ class ChatBalloonView extends Component {
             headerContent,
             bodyContent,
             className
-        } = this.props;
+        } = this.props
 
         return (
             <div className={className}>
@@ -29,4 +29,4 @@ ChatBalloonView.propTypes = {
     bodyContent: PropTypes.node.isRequired
 };
 
-export default ChatBalloonView;
+export default ChatBalloonView
