@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { PropTypes } from 'react'
 
 class Button extends React.Component {
   render () {
@@ -10,5 +10,11 @@ class Button extends React.Component {
     return <button onClick={onClick}>{ label }</button>
   }
 }
+
+Button.propTypes = {
+  label: PropTypes.string,
+  onClick: PropTypes.func.isRequired
+}
+
 
 export default Button;
