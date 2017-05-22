@@ -4,8 +4,8 @@
   "description": "A project to learn React Storybook",
   "main": "index.js",
   "scripts": {
-    "storybook": "start-storybook -p 9001 -c .storybook",
-    "deploy-storybook": "build-storybook -c .storybook -o docs",
+    "storybook": "start-storybook -s ./assets -p 9001 ",
+    "deploy-storybook": "build-storybook -s ./assets -o docs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
