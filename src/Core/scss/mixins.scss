@@ -1,0 +1,63 @@
+// based on https://codepen.io/goodtouch/pen/atvDw?editors=1100
+@mixin m-box-shadow($level) {
+    @if $level == 0 {
+        border: 1px solid rgba($COLOR_BLACK, .1);
+
+    } @else if $level == 1 {
+        box-shadow:
+            0 1px 3px rgba($COLOR_BLACK, 0.12),
+            0 1px 2px rgba($COLOR_BLACK, 0.24);
+
+    } @else if $level == 2 {
+        box-shadow:
+            0 3px 6px rgba($COLOR_BLACK, 0.16),
+            0 3px 6px rgba($COLOR_BLACK, 0.23);
+
+    } @else if $level == 3 {
+        box-shadow:
+            0 10px 20px rgba($COLOR_BLACK, 0.19),
+            0 6px 6px rgba($COLOR_BLACK, 0.23);
+
+    } @else if $level == 4 {
+        box-shadow:
+            0 14px 28px rgba($COLOR_BLACK, 0.25),
+            0 10px 10px rgba($COLOR_BLACK, 0.22);
+
+    } @else if $level == 5 {
+        box-shadow:
+            0 19px 38px rgba($COLOR_BLACK, 0.30),
+            0 15px 12px rgba($COLOR_BLACK, 0.22);
+    }
+}
+
+// based on https://codepen.io/goodtouch/pen/atvDw?editors=1100
+@mixin m-top-box-shadow($level) {
+    @if $level == 0 {
+        border-top: 1px solid rgba($COLOR_BLACK, .1);
+
+    } @else if $level == 1 {
+        box-shadow:
+            0  -1px  3px rgba($COLOR_BLACK, 0.12),
+            0  -1px  2px rgba($COLOR_BLACK, 0.24);
+
+    } @else if $level == 2 {
+        box-shadow:
+            0  -3px  6px rgba($COLOR_BLACK, 0.16),
+            0  -3px  6px rgba($COLOR_BLACK, 0.23);
+
+    } @else if $level == 3 {
+        box-shadow:
+            0 -10px 20px rgba($COLOR_BLACK, 0.19),
+            0  -6px  6px rgba($COLOR_BLACK, 0.23);
+
+    } @else if $level == 4 {
+        box-shadow:
+            0 -14px 28px rgba($COLOR_BLACK, 0.25),
+            0 -10px 10px rgba($COLOR_BLACK, 0.22);
+
+    } @else if $level == 5 {
+        box-shadow:
+            0 -19px 38px rgba($COLOR_BLACK, 0.30),
+            0 -15px 12px rgba($COLOR_BLACK, 0.22);
+    }
+}
