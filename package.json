@@ -6,6 +6,8 @@
   "scripts": {
     "storybook": "start-storybook -s ./assets -p 9001 ",
     "storybook:build": "build-storybook -s ./assets -o docs",
+    "storybook:deploy": "storybook-to-ghpages",
+    "build-storybook": "build-storybook -s ./assets -o docs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -18,6 +20,7 @@
     "style-loader": "^0.18.0"
   },
   "dependencies": {
+    "@kadira/storybook-deployer": "^1.2.0",
     "classnames": "^2.2.5",
     "react": "^15.5.4",
     "react-dom": "^15.5.4"
