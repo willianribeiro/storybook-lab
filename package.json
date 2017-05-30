@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "storybook": "start-storybook -s ./assets -p 9001 ",
-    "deploy-storybook": "build-storybook -s ./assets -o docs",
+    "storybook:build": "build-storybook -s ./assets -o docs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
