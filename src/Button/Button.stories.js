@@ -6,7 +6,7 @@ import Button from './Button';
 storiesOf('Button', module)
   .addDecorator((story) => (
     <div>
-      <h1>Button</h1>
+      <h1 className="story-title">Button</h1>
       <div> { story() } </div>
     </div>
   ))

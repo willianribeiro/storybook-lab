@@ -6,7 +6,7 @@ import ChatBalloon from './ChatBalloon';
 storiesOf('ChatBalloon', module)
   .addDecorator((story) => (
     <div>
-      <h1>ChatBalloon</h1>
+      <h1 className="story-title">ChatBalloon</h1>
       <div> { story() } </div>
     </div>
   ))
