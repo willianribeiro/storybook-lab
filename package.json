@@ -2,12 +2,13 @@
   "name": "storybook-lab",
   "version": "1.0.0",
   "description": "A project to learn React Storybook",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "scripts": {
     "storybook": "start-storybook -s ./.storybook-assets -p 9001 ",
     "storybook:build": "build-storybook -s ./.storybook-assets -o docs",
     "storybook:deploy": "storybook-to-ghpages",
     "build-storybook": "build-storybook -s ./.storybook-assets -o .out",
+    "build": "babel src --out-dir dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "storybook-deployer": {
@@ -19,6 +20,9 @@
   "license": "ISC",
   "devDependencies": {
     "@kadira/storybook": "^2.35.3",
+    "babel-cli": "^6.24.1",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
     "css-loader": "^0.28.2",
     "node-sass": "^4.5.3",
     "sass-loader": "^6.0.5",
