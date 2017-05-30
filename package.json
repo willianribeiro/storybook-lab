@@ -1,6 +1,6 @@
 {
   "name": "storybook-lab",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "A project to learn React Storybook",
   "main": "./dist/index.js",
   "scripts": {
@@ -9,6 +9,7 @@
     "storybook:deploy": "storybook-to-ghpages",
     "build-storybook": "build-storybook -s ./.storybook-assets -o .out",
     "build": "babel src --out-dir dist",
+    "prepublish": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "storybook-deployer": {
@@ -16,7 +17,7 @@
     "gitEmail": "juninho@bot.com",
     "commitMessage": "Deploy Storybook [skip ci]"
   },
-  "author": "",
+  "author": "Willian Ribeiro <willianribeiro.contato@gmail.com>",
   "license": "ISC",
   "devDependencies": {
     "@kadira/storybook": "^2.35.3",
@@ -33,5 +34,13 @@
     "classnames": "^2.2.5",
     "react": "^15.5.4",
     "react-dom": "^15.5.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/willianribeiro/storybook-lab.git"
+  },
+  "bugs": {
+    "url": "https://github.com/willianribeiro/storybook-lab/issues"
+  },
+  "homepage": "https://willianribeiro.github.io/storybook-lab"
 }
