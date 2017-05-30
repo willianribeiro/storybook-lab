@@ -45,7 +45,7 @@ storiesOf('ChatBalloon', module)
         <br />
         <br />
         <img
-          src='http://bit.ly/1PPeefG'
+          src='http://i.imgur.com/qpdJh22.jpg'
           alt="pug"
           style={{ maxWidth: '100%'}}
         />
