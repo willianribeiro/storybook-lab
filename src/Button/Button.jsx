@@ -1,5 +1,7 @@
 import React, { PropTypes } from 'react'
 
+import './Button.scss';
+
 class Button extends React.Component {
   render () {
     const {
