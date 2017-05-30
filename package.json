@@ -1,6 +1,6 @@
 {
   "name": "storybook-lab",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A project to learn React Storybook",
   "main": "./dist/index.js",
   "scripts": {
