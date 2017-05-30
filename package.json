@@ -11,8 +11,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "storybook-deployer": {
-    "gitUsername": "Junin Bot",
-    "gitEmail": "junin@bot.com",
+    "gitUsername": "Estagiário Juninho",
+    "gitEmail": "juninho@bot.com",
     "commitMessage": "Deploy Storybook [skip ci]"
   },
   "author": "",
