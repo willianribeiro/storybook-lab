@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf, action } from '@kadira/storybook';
-import ChatBalloon from './ChatBalloon.js';
+import ChatBalloon from './ChatBalloon';
 
 
 storiesOf('ChatBalloon', module)

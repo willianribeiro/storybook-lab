@@ -1,1 +1,1 @@
-export {default as ChatBalloon} from './ChatBalloon.js';
+export {default as ChatBalloon} from './ChatBalloon';

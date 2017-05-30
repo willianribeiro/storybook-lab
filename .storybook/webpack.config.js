@@ -2,6 +2,9 @@ const path = require('path');
 
 module.exports = {
   module: {
+    resolve: {
+      extensions: [".jsx", ".js", ".scss", ".css"]
+    },
     loaders: [
       {
         test: /\.scss$/,

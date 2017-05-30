@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react'
 
-import './ChatBalloon.scss'
+import './ChatBalloon'
 
 class ChatBalloonView extends Component {
     render() {
