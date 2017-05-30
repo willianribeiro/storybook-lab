@@ -7,8 +7,14 @@
     "storybook": "start-storybook -s ./assets -p 9001 ",
     "storybook:build": "build-storybook -s ./assets -o docs",
     "storybook:deploy": "storybook-to-ghpages",
-    "build-storybook": "build-storybook -s ./assets -o docs",
+    "deploy-storybook": "storybook-to-ghpages",
+    "build-storybook": "build-storybook -s ./assets -o .out",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "storybook-deployer": {
+    "gitUsername": "JUNINHO",
+    "gitEmail": "juninho@email.com",
+    "commitMessage": "Deploy Storybook [skip ci]"
   },
   "author": "",
   "license": "ISC",
