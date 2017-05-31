@@ -19,7 +19,7 @@ storiesOf('Button', module)
   .add('with some emoji', () => (
     <Button
       label={'😀 😎 👍'}
-      onClick={action('clicked')} 
-    /> 
+      onClick={action('clicked')}
+    />
   ));
 
