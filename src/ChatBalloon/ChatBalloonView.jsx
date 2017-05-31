@@ -1,30 +1,31 @@
-import React, { Component, PropTypes } from 'react'
+import React, { Component, PropTypes } from 'react';
 
 class ChatBalloonView extends Component {
-    render() {
-        const {
-            headerContent,
-            bodyContent,
-            className
-        } = this.props
+  render() {
+    const {
+      headerContent,
+      bodyContent,
+      className,
+    } = this.props;
 
-        return (
-            <div className={className}>
-                <div className="chat-balloon__header">
-                    { headerContent }
-                </div>
+    return (
+      <div className={className}>
+        <div className="chat-balloon__header">
+          { headerContent }
+        </div>
 
-                <div className="chat-balloon__body">
-                    { bodyContent }
-                </div>
-            </div>
-        );
-    }
+        <div className="chat-balloon__body">
+          { bodyContent }
+        </div>
+      </div>
+    );
+  }
 }
 
 ChatBalloonView.propTypes = {
-    headerContent: PropTypes.node.isRequired,
-    bodyContent: PropTypes.node.isRequired
+  headerContent: PropTypes.node.isRequired,
+  bodyContent: PropTypes.node.isRequired,
+  className: PropTypes.string,
 };
 
-export default ChatBalloonView
+export default ChatBalloonView;

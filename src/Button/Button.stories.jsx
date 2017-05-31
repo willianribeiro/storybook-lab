@@ -4,7 +4,7 @@ import Button from './Button';
 
 
 storiesOf('Button', module)
-  .addDecorator((story) => (
+  .addDecorator(story => (
     <div>
       <h1 className="story-title">Button</h1>
       <div> { story() } </div>
@@ -19,7 +19,7 @@ storiesOf('Button', module)
   .add('with some emoji', () => (
     <Button
       label={'😀 😎 👍'}
-      onClick={action('clicked')}
+      onClick={action('clicked')} 
     /> 
   ));
 
