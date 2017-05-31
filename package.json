@@ -1,6 +1,6 @@
 {
   "name": "storybook-lab",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A project to learn React Storybook",
   "main": "./dist/index.js",
   "scripts": {
@@ -8,7 +8,6 @@
     "storybook:build": "build-storybook -s ./.storybook-assets -o docs",
     "storybook:deploy": "storybook-to-ghpages",
     "build-storybook": "build-storybook -s ./.storybook-assets -o .out",
-
     "build": "NODE_ENV=production babel src --out-dir dist",
     "prepublish": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
