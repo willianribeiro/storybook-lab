@@ -1,7 +1,5 @@
 import React, { Component, PropTypes } from 'react'
 
-import './ChatBalloon'
-
 class ChatBalloonView extends Component {
     render() {
         const {
