@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { configure, addDecorator } from '@kadira/storybook';
+import '../src/storybook-lab.scss';
 
 addDecorator((story) => (
   <div className="storybook-wrapper">
