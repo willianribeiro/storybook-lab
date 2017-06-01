@@ -21,12 +21,12 @@ gulp.task('default', function(){
   console.log('');
 
   console.log('---> gulp css');
-  console.log('Compile SCSS and put in /dist folder.');
+  console.log('Compile SCSS and put in /components folder.');
   console.log('');
   console.log('');
 
   console.log('---> gulp javascript');
-  console.log('Transpile all JavaScript files from src folder (except *.stories.js[x]?) and put it in /dist folder.');
+  console.log('Transpile all JavaScript files from src folder (except *.stories.js[x]?) and put it in /components folder.');
   console.log('');
   console.log('');
 
@@ -43,7 +43,7 @@ gulp.task('default', function(){
 });
 
 
-// Compile sass files to /dist folder
+// Compile sass files to /components folder
 // docs: https://github.com/dlmanning/gulp-sass#basic-usage
 gulp.task('css', function() {
   return gulp.src('src/storybook-lab.scss')
@@ -55,7 +55,7 @@ gulp.task('css', function() {
 });
 
 
-// Transpile JavaScript files to /dist folder
+// Transpile JavaScript files to /components folder
 // docs: https://github.com/babel/gulp-babel#usage
 gulp.task('javascript', function() {
   return gulp.src([
@@ -65,7 +65,7 @@ gulp.task('javascript', function() {
     '!src/**/*.stories.js'
   ])
     .pipe(babel())
-    .pipe(gulp.dest('dist'))
+    .pipe(gulp.dest('components'))
 });
 
 
@@ -84,17 +84,17 @@ gulp.task('lint', function() {
 });
 
 
-// Removes /dist folder
+// Removes /components folder
 // docs: https://www.npmjs.com/package/del
 gulp.task('clean', function() {
-  del('dist');
+  del('components');
   del('storybook-lab.css');
   return del('storybook-lab.min.css');
 });
 
 
 // This task do:
-// 1. Removes /dist folder
+// 1. Removes /components folder
 // 2. Lint JavaScript files (with lint task)
 // 3. Transpile JavaScript files (with javascript task)
 // 4. Compile SCSS (with css task)
