@@ -2,3 +2,5 @@ node_modules
 docs
 dist
 npm-debug.log
+storybook-lab.css
+storybook-lab.min.css
