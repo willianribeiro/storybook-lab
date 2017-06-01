@@ -9,7 +9,7 @@ addDecorator((story) => (
   </div>
 ))
 
-const req = require.context('../src', true, /\.stories\.js$/);
+const req = require.context('../src', true, /(\.stories\.js$)|(\.stories\.jsx$)/);
 
 function loadStories () {
   req.keys().forEach((filename) => req(filename))
