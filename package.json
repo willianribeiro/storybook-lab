@@ -5,8 +5,8 @@
   "main": "./dist/index.js",
   "scripts": {
     "storybook": "start-storybook -s ./.storybook-assets -p 9001 ",
-    "storybook:build": "build-storybook -s ./.storybook-assets -o docs",
     "storybook:deploy": "storybook-to-ghpages",
+    "storybook:build": "build-storybook -s ./.storybook-assets -o docs",
     "build-storybook": "build-storybook -s ./.storybook-assets -o .out",
     "build": "npm run lint && NODE_ENV=production babel src --out-dir dist",
     "prepublish": "npm run build",
