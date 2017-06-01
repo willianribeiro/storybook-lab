@@ -87,7 +87,9 @@ gulp.task('lint', function() {
 // Removes /dist folder
 // docs: https://www.npmjs.com/package/del
 gulp.task('clean', function() {
-  return del('dist')
+  del('dist');
+  del('storybook-lab.css');
+  return del('storybook-lab.min.css');
 });
 
 
