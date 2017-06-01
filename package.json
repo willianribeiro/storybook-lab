@@ -12,7 +12,8 @@
     "lint:fix": "./node_modules/.bin/eslint src/ --ext .jsx,.js --fix",
     "build": "gulp build",
     "clean": "gulp clean",
-    "prepublish": "npm run build",
+    "prepublish": "gulp build",
+    "preversion": "gulp build",
     "postpublish": "gulp clean",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
