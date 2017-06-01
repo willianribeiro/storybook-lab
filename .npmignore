@@ -3,3 +3,4 @@ src
 .storybook-assets
 .editorconfig
 .eslintrc
+.babelrc
