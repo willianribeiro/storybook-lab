@@ -4,4 +4,4 @@ src
 .editorconfig
 .eslintrc
 .babelrc
-.gulpfile.js
+gulpfile.js
