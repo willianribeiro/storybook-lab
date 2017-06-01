@@ -48,10 +48,10 @@ gulp.task('default', function(){
 gulp.task('css', function() {
   return gulp.src('src/storybook-lab.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('dist'))
+    .pipe(gulp.dest('.'))
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(rename('storybook-lab.min.css'))
-    .pipe(gulp.dest('dist'))
+    .pipe(gulp.dest('.'))
 });
 
 
