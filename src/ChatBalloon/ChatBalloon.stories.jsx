@@ -2,6 +2,11 @@ import React from 'react';
 import { storiesOf } from '@kadira/storybook';
 import ChatBalloon from './ChatBalloon';
 
+let bodyContent = '';
+bodyContent += 'Mussum Ipsum, cacilds vidis litro abertis. Leite de capivaris, leite de mula ';
+bodyContent += 'manquis sem cabeça. Interagi no mé, cursus quis, vehicula ac nisi. ';
+bodyContent += 'Manduma pindureta quium dia nois paga. In elementis mé pra quem ';
+bodyContent += 'é amistosis quis leo.';
 
 storiesOf('ChatBalloon', module)
   .addDecorator(story => (
@@ -12,37 +17,29 @@ storiesOf('ChatBalloon', module)
   ))
   .add('Simplest', () => (
     <ChatBalloon
-      headerContent="ChatBallon Simples"
-      bodyContent="Mussum Ipsum, cacilds vidis litro abertis. Leite de capivaris,
-      leite de mula manquis sem cabeça. Interagi no mé, cursus quis, vehicula ac nisi.
-      Manduma pindureta quium dia nois paga. In elementis mé pra quem é amistosis quis leo."
+      headerContent="ChatBalloon Simples"
+      bodyContent={bodyContent}
     />
   ))
   .add('Dark theme', () => (
     <ChatBalloon
       darkTheme
       headerContent="Com tema Dark"
-      bodyContent="Mussum Ipsum, cacilds vidis litro abertis. Leite de capivaris,
-      leite de mula manquis sem cabeça. Interagi no mé, cursus quis, vehicula ac nisi.
-      Manduma pindureta quium dia nois paga. In elementis mé pra quem é amistosis quis leo."
+      bodyContent={bodyContent}
     />
   ))
   .add('Caret on the right', () => (
     <ChatBalloon
       caretRight
       headerContent="Com caret na direita"
-      bodyContent="Mussum Ipsum, cacilds vidis litro abertis. Leite de capivaris,
-      leite de mula manquis sem cabeça. Interagi no mé, cursus quis, vehicula ac nisi.
-      Manduma pindureta quium dia nois paga. In elementis mé pra quem é amistosis quis leo."
+      bodyContent={bodyContent}
     />
   ))
   .add('Without caret', () => (
     <ChatBalloon
       removeCaret
       headerContent="Sem caret"
-      bodyContent="Mussum Ipsum, cacilds vidis litro abertis. Leite de capivaris,
-      leite de mula manquis sem cabeça. Interagi no mé, cursus quis, vehicula ac nisi.
-      Manduma pindureta quium dia nois paga. In elementis mé pra quem é amistosis quis leo."
+      bodyContent={bodyContent}
     />
   ))
   .add('With HTML on the body', () => {
