@@ -1,8 +1,11 @@
 'use strict'
 
 import React from 'react';
-import { configure, addDecorator } from '@kadira/storybook';
+import { configure, addDecorator, setAddon } from '@kadira/storybook';
+import infoAddon from '@storybook/addon-info';
 import '../src/storybook-lab.scss';
+
+setAddon(infoAddon);
 
 addDecorator((story) => (
   <div className="storybook-wrapper">
