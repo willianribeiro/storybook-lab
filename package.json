@@ -15,7 +15,7 @@
     "prepublish": "gulp build",
     "preversion": "gulp build",
     "postpublish": "gulp clean",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "storybook-deployer": {
     "gitUsername": "Estagiário Juninho",
@@ -42,7 +42,9 @@
     "gulp-eslint": "^3.0.1",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
+    "jest": "^20.0.4",
     "node-sass": "^4.5.3",
+    "react-test-renderer": "^15.5.4",
     "run-sequence": "^1.2.2",
     "sass-loader": "^6.0.5",
     "style-loader": "^0.18.0"
