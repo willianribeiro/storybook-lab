@@ -15,34 +15,34 @@ storiesOf('ChatBalloon', module)
       <div> { story() } </div>
     </div>
   ))
-  .add('Simplest', () => (
+  .addWithInfo('Simplest', () => (
     <ChatBalloon
       headerContent="ChatBalloon Simples"
       bodyContent={bodyContent}
     />
   ))
-  .add('Dark theme', () => (
+  .addWithInfo('Dark theme', () => (
     <ChatBalloon
       darkTheme
       headerContent="Com tema Dark"
       bodyContent={bodyContent}
     />
   ))
-  .add('Caret on the right', () => (
+  .addWithInfo('Caret on the right', () => (
     <ChatBalloon
       caretRight
       headerContent="Com caret na direita"
       bodyContent={bodyContent}
     />
   ))
-  .add('Without caret', () => (
+  .addWithInfo('Without caret', () => (
     <ChatBalloon
       removeCaret
       headerContent="Sem caret"
       bodyContent={bodyContent}
     />
   ))
-  .add('With HTML on the body', () => {
+  .addWithInfo('With HTML on the body', () => {
     const bodyHTML = (
       <div>
         Mussum Ipsum, cacilds vidis <strong>litro abertis. </strong>

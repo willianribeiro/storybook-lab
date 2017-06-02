@@ -10,13 +10,13 @@ storiesOf('Button', module)
       <div> { story() } </div>
     </div>
   ))
-  .add('with text', () => (
+  .addWithInfo('with text', () => (
     <Button
       label={'Hello Button'}
       onClick={action('clicked')}
     />
   ))
-  .add('with some emoji', () => (
+  .addWithInfo('with some emoji', () => (
     <Button
       label={'😀 😎 👍'}
       onClick={action('clicked')}
