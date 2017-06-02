@@ -8,7 +8,7 @@
     "storybook:deploy": "storybook-to-ghpages",
     "storybook:build": "build-storybook -s ./.storybook-assets -o docs",
     "build-storybook": "build-storybook -s ./.storybook-assets -o .out",
-    "lint": "eslint src/ --ext .jsx,.js",
+    "lint": "gulp lint",
     "lint:fix": "eslint src/ --ext .jsx,.js --fix",
     "build": "gulp build",
     "clean": "gulp clean",
