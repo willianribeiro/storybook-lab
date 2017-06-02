@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render ChatBalloon correctly 1`] = `
+<div
+  className="chat-balloon is-caret-left"
+>
+  <div
+    className="chat-balloon__header"
+  >
+    Chat Balloon Simples
+  </div>
+  <div
+    className="chat-balloon__body"
+  >
+    Mussum Ipsum, cacilds vidis litro abertis. Leite de capivaris, leite de mula manquis sem cabeça. Interagi no mé, cursus quis, vehicula ac nisi. Manduma pindureta quium dia nois paga. In elementis mé pra quem é amistosis quis leo.
+  </div>
+</div>
+`;
