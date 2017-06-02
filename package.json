@@ -12,8 +12,8 @@
     "lint:fix": "eslint src/ --ext .jsx,.js --fix",
     "build": "gulp build",
     "clean": "gulp clean",
-    "prepublish": "gulp build",
-    "preversion": "gulp build",
+    "prepublish": "npm run test && gulp build",
+    "preversion": "npm run test && gulp build",
     "postpublish": "gulp clean",
     "test": "jest"
   },
