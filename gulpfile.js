@@ -62,7 +62,9 @@ gulp.task('javascript', function() {
     'src/**/*.js',
     'src/**/*.jsx',
     '!src/**/*.stories.jsx',
-    '!src/**/*.stories.js'
+    '!src/**/*.stories.js',
+    '!src/**/*.test.jsx',
+    '!src/**/*.test.js'
   ])
     .pipe(babel())
     .pipe(gulp.dest('components'))
@@ -74,9 +76,7 @@ gulp.task('javascript', function() {
 gulp.task('lint', function() {
   return gulp.src([
     'src/**/*.js',
-    'src/**/*.jsx',
-    '!src/**/*.stories.jsx',
-    '!src/**/*.stories.js'
+    'src/**/*.jsx'
   ])
   .pipe(eslint())
   .pipe(eslint.format())
