@@ -1,7 +1,7 @@
 'use strict'
 
 import React from 'react';
-import { configure, addDecorator, setAddon } from '@kadira/storybook';
+import { configure, addDecorator, setAddon } from '@storybook/react';
 import infoAddon from '@storybook/addon-info';
 import '../src/storybook-lab.scss';
 

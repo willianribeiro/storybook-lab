@@ -1,19 +1,19 @@
 const path = require('path');
 
 module.exports = {
+  resolve: {
+    extensions: [".jsx", ".js", ".scss", ".css"]
+  },
   module: {
-    resolve: {
-      extensions: [".jsx", ".js", ".scss", ".css"]
-    },
-    loaders: [
+    rules: [
       {
         test: /\.scss$/,
-        loaders: ["style", "css", "sass"],
+        loaders: ["style-loader", "css-loader", "sass-loader"],
         include: path.resolve(__dirname, '../')
       },
       {
         test: /\.css$/,
-        loaders: ["style", "css"],
+        loaders: ["style-loader", "css-loader"],
         include: path.resolve(__dirname, '../')
       }
     ]

@@ -1,7 +1,8 @@
 import React from 'react';
-import { storiesOf, action } from '@kadira/storybook';
-import Button from './Button';
+import { storiesOf } from '@storybook/react';
+import { action } from '@storybook/addon-actions';
 
+import Button from './Button';
 
 storiesOf('Button', module)
   .addDecorator(story => (
