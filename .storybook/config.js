@@ -7,7 +7,7 @@ import '../src/storybook-lab.scss';
 
 // Function to load all stories inside src
 const req = require.context('../src', true, /(\.stories\.js$)|(\.stories\.jsx$)/);
-loadStories = () => {
+const loadStories = () => {
   req.keys().forEach((filename) => req(filename))
 }
 
