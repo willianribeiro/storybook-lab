@@ -1,22 +1,25 @@
 'use strict'
 
 import React from 'react';
-import { configure, addDecorator, setAddon } from '@storybook/react';
+import * as storybook from '@storybook/react';
 import infoAddon from '@storybook/addon-info';
 import '../src/storybook-lab.scss';
 
-setAddon(infoAddon);
+// Function to load all stories inside src
+const req = require.context('../src', true, /(\.stories\.js$)|(\.stories\.jsx$)/);
+loadStories = () => {
+  req.keys().forEach((filename) => req(filename))
+}
 
-addDecorator((story) => (
+// Add infoAddon
+storybook.setAddon(infoAddon);
+
+// Add div to wrapper demo's components
+storybook.addDecorator((story) => (
   <div className="storybook-wrapper">
     { story() }
   </div>
 ))
 
-const req = require.context('../src', true, /(\.stories\.js$)|(\.stories\.jsx$)/);
-
-function loadStories () {
-  req.keys().forEach((filename) => req(filename))
-}
-
-configure(loadStories, module);
+// Load stories
+storybook.configure(loadStories, module);
